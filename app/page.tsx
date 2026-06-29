@@ -1277,98 +1277,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============ TESTIMONIALS ============ */}
-      <section style={{ padding: "90px 32px", position: "relative" }}>
+      {/* ============ STATS ============ */}
+      <section style={{ padding: "80px 32px" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: 54, ...reveal() }}>
-            <p
-              style={{
-                fontSize: 12.5,
-                letterSpacing: "2px",
-                textTransform: "uppercase",
-                color: "#FF4E10",
-                fontWeight: 700,
-                margin: "0 0 16px",
-              }}
-            >
-              What People Say
-            </p>
-            <h2 style={{ fontSize: 46, lineHeight: 1.08, letterSpacing: "-0.03em", fontWeight: 800, margin: 0 }}>
-              Meetings people{" "}
-              <span style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, color: "#FF4E10" }}>
-                stop dreading.
-              </span>
-            </h2>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20, marginBottom: 64 }}>
-            {[
-              {
-                quote:
-                  "“We switched from Zoom three months ago. The AI notes alone saved us hours of follow-up emails every week.”",
-                initials: "LH",
-                grad: "linear-gradient(135deg,#FF4E10,#ff8a5c)",
-                name: "Lena Hoffmann",
-                role: "Head of Product, Remotify",
-                delay: 0,
-              },
-              {
-                quote:
-                  "“Snaarpmeet is the first conferencing tool where my non-technical co-founders never complain about joining a call.”",
-                initials: "AO",
-                grad: "linear-gradient(135deg,#3b6fd4,#7aa0e6)",
-                name: "Adebayo Okonkwo",
-                role: "CEO, Credr",
-                delay: 0.08,
-              },
-              {
-                quote:
-                  "“The browser-first approach is a game changer. Our clients never have to download anything — calls actually start on time.”",
-                initials: "SR",
-                grad: "linear-gradient(135deg,#1f9d63,#5fcf95)",
-                name: "Sophie Renard",
-                role: "Freelance UX Consultant",
-                delay: 0.16,
-              },
-            ].map((t) => (
-              <div
-                key={t.initials}
-                style={{
-                  background: "#fff",
-                  border: "1px solid rgba(26,26,26,0.06)",
-                  borderRadius: 18,
-                  padding: 30,
-                  ...reveal(t.delay),
-                }}
-              >
-                <div style={{ color: "#FF4E10", fontSize: 15, letterSpacing: "2px", marginBottom: 16 }}>★★★★★</div>
-                <p style={{ fontSize: 16.5, lineHeight: 1.62, color: "#2a2a2a", margin: "0 0 22px", fontWeight: 500 }}>
-                  {t.quote}
-                </p>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <div
-                    style={{
-                      width: 42,
-                      height: 42,
-                      borderRadius: "50%",
-                      background: t.grad,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      color: "#fff",
-                      fontWeight: 700,
-                      fontSize: 15,
-                    }}
-                  >
-                    {t.initials}
-                  </div>
-                  <div>
-                    <div style={{ fontWeight: 700, fontSize: 14.5 }}>{t.name}</div>
-                    <div style={{ fontSize: 13, color: "#9a9a9a" }}>{t.role}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
           <div
             style={{
               background: "#fff",
@@ -1604,6 +1515,102 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ============ TESTIMONIALS ============ */}
+      <section style={{ padding: "90px 32px", position: "relative" }}>
+        <div style={{ maxWidth: 1180, margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: 54, ...reveal() }}>
+            <p
+              style={{
+                fontSize: 12.5,
+                letterSpacing: "2px",
+                textTransform: "uppercase",
+                color: "#FF4E10",
+                fontWeight: 700,
+                margin: "0 0 16px",
+              }}
+            >
+              What People Say
+            </p>
+            <h2 style={{ fontSize: 46, lineHeight: 1.08, letterSpacing: "-0.03em", fontWeight: 800, margin: 0 }}>
+              Meetings people{" "}
+              <span style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, color: "#FF4E10" }}>
+                stop dreading.
+              </span>
+            </h2>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
+            {[
+              {
+                quote:
+                  "“We switched from Zoom three months ago. The AI notes alone saved us hours of follow-up emails every week.”",
+                initials: "LH",
+                grad: "linear-gradient(135deg,#FF4E10,#ff8a5c)",
+                name: "Lena Hoffmann",
+                role: "Head of Product, Remotify",
+                delay: 0,
+              },
+              {
+                quote:
+                  "“Snaarpmeet is the first conferencing tool where my non-technical co-founders never complain about joining a call.”",
+                initials: "AO",
+                grad: "linear-gradient(135deg,#3b6fd4,#7aa0e6)",
+                name: "Adebayo Okonkwo",
+                role: "CEO, Credr",
+                delay: 0.08,
+              },
+              {
+                quote:
+                  "“The browser-first approach is a game changer. Our clients never have to download anything — calls actually start on time.”",
+                initials: "SR",
+                grad: "linear-gradient(135deg,#1f9d63,#5fcf95)",
+                name: "Sophie Renard",
+                role: "Freelance UX Consultant",
+                delay: 0.16,
+              },
+            ].map((t) => (
+              <div
+                key={t.initials}
+                style={{
+                  background: "#fff",
+                  border: "1px solid rgba(26,26,26,0.06)",
+                  borderRadius: 18,
+                  padding: 30,
+                  ...reveal(t.delay),
+                }}
+              >
+                <div style={{ color: "#FF4E10", fontSize: 15, letterSpacing: "2px", marginBottom: 16 }}>★★★★★</div>
+                <p style={{ fontSize: 16.5, lineHeight: 1.62, color: "#2a2a2a", margin: "0 0 22px", fontWeight: 500 }}>
+                  {t.quote}
+                </p>
+                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                  <div
+                    style={{
+                      width: 42,
+                      height: 42,
+                      borderRadius: "50%",
+                      background: t.grad,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: "#fff",
+                      fontWeight: 700,
+                      fontSize: 15,
+                    }}
+                  >
+                    {t.initials}
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: 700, fontSize: 14.5 }}>{t.name}</div>
+                    <div style={{ fontSize: 13, color: "#9a9a9a" }}>{t.role}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* ============ FAQ ============ */}
       <section id="faq" style={{ padding: "80px 32px" }}>
