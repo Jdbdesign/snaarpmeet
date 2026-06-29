@@ -855,7 +855,7 @@ export default function Home() {
               Why Snaarpmeet
             </p>
             <h2 style={{ fontSize: 46, lineHeight: 1.1, letterSpacing: "-0.03em", fontWeight: 800, margin: 0 }}>
-              Everything Google Meet does. Built for teams who actually{" "}
+              Everything Snaarp Meet does. Built for teams who actually{" "}
               <span style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, color: "#FF4E10" }}>
                 need to move fast.
               </span>
